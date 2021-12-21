@@ -17,10 +17,10 @@
 			{% for feature in features %}
 			<div class="features__item">
 				<div class="feature h-full grid">
-					<div class="features__image flex">
+					<div class="features__image flex h-full">
 						<picture>
 							<img
-								class=""
+								class="h-full object-contain"
 								src="assets/pics/{{feature.pic}}.png"
 								srcset="
 									assets/pics/{{feature.pic}}-2x.png 2x,
@@ -30,7 +30,7 @@
 							/>
 						</picture>
 					</div>
-					<div class="feature__content flex flex-col grow justify-start">
+					<div class="feature__content flex flex-col grow justify-start pt-4">
 						<div class="feature__content-inner">
 							<div
 								class="feature__title text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5"

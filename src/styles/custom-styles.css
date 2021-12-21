@@ -120,7 +120,7 @@ body {
 }
 
 .features {
-	background-image: url("../img/bg-oval-2x.png");
+	background-image: url("assets/img/bg-oval-2x.png");
 	background-position: right bottom;
 	background-size: 740px 1188px;
 	background-repeat: no-repeat;
@@ -139,6 +139,17 @@ body {
 .features__item {
 	width: 100%;
 }
+.features__item:nth-child(4) ~ .features__item {
+	display: none;
+}
+
+.feature .features__list.reveal .features__item:nth-child(4) ~ .features__item {
+	display: block;
+}
+
+.feature {
+	grid-template-rows: 362px 1fr;
+}
 
 .feature__content {
 	margin: 0 auto;
@@ -149,8 +160,8 @@ body {
 }
 
 .upcoming {
-	background-image: url("../img/bg-oval-left.png"),
-		url("../img/bg-particles-3x.png"),
+	background-image: url("assets/img/bg-oval-left.png"),
+		url("assets/img/bg-particles-3x.png"),
 		linear-gradient(to bottom, #045e62 0%, #010a09 100%);
 	background-position: 0 0, calc(100% - 60px) bottom, 0 0;
 	background-size: 586px 1188px, 160px 170px, cover;
@@ -223,7 +234,7 @@ body {
 		line-height: 1.2;
 	}
 	.feature__content {
-		max-width: 410px;
+		/*max-width: 410px;*/
 	}
 
 	.features__list {
