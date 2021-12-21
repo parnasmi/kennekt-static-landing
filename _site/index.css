@@ -678,6 +678,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-12 {
   height: 3rem;
 }
+.h-7 {
+  height: 1.75rem;
+}
 .w-32 {
   width: 8rem;
 }
@@ -695,6 +698,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-12 {
   width: 3rem;
+}
+.w-7 {
+  width: 1.75rem;
 }
 .max-w-none {
   max-width: none;
@@ -790,6 +796,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-2 {
   padding: 0.5rem;
@@ -1103,6 +1113,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 	.xl\:mb-3 {
     margin-bottom: 0.75rem;
+  }
+
+	.xl\:ml-3\.5 {
+    margin-left: 0.875rem;
+  }
+
+	.xl\:ml-3 {
+    margin-left: 0.75rem;
   }
 
 	.xl\:block {
