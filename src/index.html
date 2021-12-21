@@ -137,178 +137,7 @@ layout: "layouts/base.njk"
 </div>
 <!--    Keep your deals moving End-->
 <!--    Tailor-made features Begin-->
-<div class="features pt-16 pb-12 xl:pt-36 xl:pb-24">
-	<div class="features__inner xl:max-w-[1100px] mx-auto px-3 lg:px-0">
-		<div class="text-center">
-			<div
-				class="features__caption text-primary-lighter mb-4 text-lg font-medium uppercase"
-			>
-				Our features
-			</div>
-			<div class="features__title section-title">Tailor-made features</div>
-			<div class="features__descr mx-auto text-sm xl:text-lg font-meduim mb-10">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-				lorem scelerisque elit sed ut pellentesque. Auctor vivamus id eu vel
-				ante fermentum.
-			</div>
-		</div>
-		<div class="features__list">
-			<!-- Start feature item-->
-			<div class="features__item">
-				<div class="feature h-full flex flex-col">
-					<div class="features__image">
-						<picture>
-							<img
-								class=""
-								src="assets/pics/pic-client-management.png"
-								srcset="
-									assets/pics/pic-client-management-2x.png 2x,
-									assets/pics/pic-client-management.png    1x
-								"
-								alt="Kennekt cases page interface"
-							/>
-						</picture>
-					</div>
-					<div class="feature__content flex flex-col grow">
-						<div class="feature__content-inner mb-7">
-							<div
-								class="feature__title text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5"
-							>
-								Business client management
-							</div>
-							<div class="feature__descr text-base">
-								Businesslarda client management. linked clientlar, clientlarni
-								invite qilish accountability.
-							</div>
-						</div>
-						<a
-							href=""
-							class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg"
-							>Learn more &#8594;</a
-						>
-					</div>
-				</div>
-			</div>
-			<!-- End feature item-->
-			<!-- Start feature item-->
-			<div class="features__item">
-				<div class="feature h-full flex flex-col">
-					<div class="features__image">
-						<picture>
-							<img
-								class=""
-								src="assets/pics/pic-client-management.png"
-								srcset="
-									assets/pics/pic-client-management-2x.png 2x,
-									assets/pics/pic-client-management.png    1x
-								"
-								alt="Kennekt cases page interface"
-							/>
-						</picture>
-					</div>
-					<div class="feature__content flex flex-col grow">
-						<div class="feature__content-inner mb-7">
-							<div
-								class="feature__title text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5"
-							>
-								Business client management
-							</div>
-							<div class="feature__descr text-base">
-								Businesslarda client management. linked clientlar, clientlarni
-								invite qilish accountability.
-							</div>
-						</div>
-						<a
-							href=""
-							class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg"
-							>Learn more &#8594;</a
-						>
-					</div>
-				</div>
-			</div>
-			<!-- End feature item-->
-			<!-- Start feature item-->
-			<div class="features__item">
-				<div class="feature h-full flex flex-col">
-					<div class="features__image">
-						<picture>
-							<img
-								class=""
-								src="assets/pics/pic-client-management.png"
-								srcset="
-									assets/pics/pic-client-management-2x.png 2x,
-									assets/pics/pic-client-management.png    1x
-								"
-								alt="Kennekt cases page interface"
-							/>
-						</picture>
-					</div>
-					<div class="feature__content flex flex-col grow">
-						<div class="feature__content-inner mb-7">
-							<div
-								class="feature__title text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5"
-							>
-								Business client management
-							</div>
-							<div class="feature__descr text-base">
-								Businesslarda client management. linked clientlar, clientlarni
-								invite qilish accountability.
-							</div>
-						</div>
-						<a
-							href=""
-							class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg"
-							>Learn more &#8594;</a
-						>
-					</div>
-				</div>
-			</div>
-			<!-- End feature item-->
-			<!-- Start feature item-->
-			<div class="features__item">
-				<div class="feature h-full flex flex-col">
-					<div class="features__image">
-						<picture>
-							<img
-								class=""
-								src="assets/pics/pic-client-management.png"
-								srcset="
-									assets/pics/pic-client-management-2x.png 2x,
-									assets/pics/pic-client-management.png    1x
-								"
-								alt="Kennekt cases page interface"
-							/>
-						</picture>
-					</div>
-					<div class="feature__content flex flex-col grow">
-						<div class="feature__content-inner mb-7">
-							<div
-								class="feature__title text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5"
-							>
-								Business client management
-							</div>
-							<div class="feature__descr text-base">
-								Businesslarda client management. linked clientlar, clientlarni
-								invite qilish accountability.
-							</div>
-						</div>
-						<a
-							href=""
-							class="block mt-auto text-primary-lighter transition font-bold hover:text-primary font-lg"
-							>Learn more &#8594;</a
-						>
-					</div>
-				</div>
-			</div>
-			<!-- End feature item-->
-		</div>
-		<button
-			class="btn table btn-outlined mx-auto btn-normal btn-outlined-dark rounded-xl mt-16 px-12"
-		>
-			See all features
-		</button>
-	</div>
-</div>
+{% include features.html %}
 <!--    Tailor-made features End-->
 <!--   Work anywhere, with any device Begin-->
 <div class="device px-3 xl:px-0 xl:pt-40 xl:pb-44 pt-16 pb-20">
@@ -463,126 +292,30 @@ layout: "layouts/base.njk"
 			Here are some of our upcoming features in 2022
 		</h2>
 		<div class="upcoming__features-wrapper xl:max-w-[1100px] overflow-hidden">
+			{% for upcomingFeature in upcoming%}
 			<div class="upcoming__item">
 				<div class="upcoming-feat flex">
 					<div
 						class="upcoming-feat__icon w-12 h-12 rounded-full bg-primary-lighter flex items-center justify-center shrink-0 mr-5"
 					>
-						<img src="assets/img/icon-upcoming-train.svg" alt="" />
+						<img
+							src="{{settings.siteRoot}}/assets/img/{{upcomingFeature.icon}}.svg"
+							alt=""
+						/>
 					</div>
 					<div class="upcoming-feat__content">
 						<h3
 							class="upcoming-feat__title font-bold text-xl xl:text-3xl text-kdark mb-2 xl:mb-3.5"
 						>
-							eTrain module
+							{{upcomingFeature.title}}
 						</h3>
 						<p class="upcoming-feat__descr text-sm xl:text-base font-medium">
-							Businesslarning stafflarni o'qitishlari uchun mo'ljallangan
-							bo'lim.
+							{{upcomingFeature.description}}
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="upcoming__item">
-				<div class="upcoming-feat flex">
-					<div
-						class="upcoming-feat__icon w-12 h-12 rounded-full bg-primary-lighter flex items-center justify-center shrink-0 mr-5"
-					>
-						<img src="assets/img/icon-upcoming-train.svg" alt="" />
-					</div>
-					<div class="upcoming-feat__content">
-						<h3
-							class="upcoming-feat__title font-bold text-xl xl:text-3xl text-kdark mb-2 xl:mb-3.5"
-						>
-							eTrain module
-						</h3>
-						<p class="upcoming-feat__descr text-sm xl:text-base font-medium">
-							Businesslarning stafflarni o'qitishlari uchun mo'ljallangan
-							bo'lim.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="upcoming__item">
-				<div class="upcoming-feat flex">
-					<div
-						class="upcoming-feat__icon w-12 h-12 rounded-full bg-primary-lighter flex items-center justify-center shrink-0 mr-5"
-					>
-						<img src="assets/img/icon-upcoming-train.svg" alt="" />
-					</div>
-					<div class="upcoming-feat__content">
-						<h3
-							class="upcoming-feat__title font-bold text-xl xl:text-3xl text-kdark mb-2 xl:mb-3.5"
-						>
-							eTrain module
-						</h3>
-						<p class="upcoming-feat__descr text-sm xl:text-base font-medium">
-							Businesslarning stafflarni o'qitishlari uchun mo'ljallangan
-							bo'lim.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="upcoming__item">
-				<div class="upcoming-feat flex">
-					<div
-						class="upcoming-feat__icon w-12 h-12 rounded-full bg-primary-lighter flex items-center justify-center shrink-0 mr-5"
-					>
-						<img src="assets/img/icon-upcoming-train.svg" alt="" />
-					</div>
-					<div class="upcoming-feat__content">
-						<h3
-							class="upcoming-feat__title font-bold text-xl xl:text-3xl text-kdark mb-2 xl:mb-3.5"
-						>
-							eTrain module
-						</h3>
-						<p class="upcoming-feat__descr text-sm xl:text-base font-medium">
-							Businesslarning stafflarni o'qitishlari uchun mo'ljallangan
-							bo'lim.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="upcoming__item">
-				<div class="upcoming-feat flex">
-					<div
-						class="upcoming-feat__icon w-12 h-12 rounded-full bg-primary-lighter flex items-center justify-center shrink-0 mr-5"
-					>
-						<img src="assets/img/icon-upcoming-train.svg" alt="" />
-					</div>
-					<div class="upcoming-feat__content">
-						<h3
-							class="upcoming-feat__title font-bold text-xl xl:text-3xl text-kdark mb-2 xl:mb-3.5"
-						>
-							eTrain module
-						</h3>
-						<p class="upcoming-feat__descr text-sm xl:text-base font-medium">
-							Businesslarning stafflarni o'qitishlari uchun mo'ljallangan
-							bo'lim.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="upcoming__item">
-				<div class="upcoming-feat flex">
-					<div
-						class="upcoming-feat__icon w-12 h-12 rounded-full bg-primary-lighter flex items-center justify-center shrink-0 mr-5"
-					>
-						<img src="assets/img/icon-upcoming-train.svg" alt="" />
-					</div>
-					<div class="upcoming-feat__content">
-						<h3
-							class="upcoming-feat__title font-bold text-xl xl:text-3xl text-kdark mb-2 xl:mb-3.5"
-						>
-							eTrain module
-						</h3>
-						<p class="upcoming-feat__descr text-sm xl:text-base font-medium">
-							Businesslarning stafflarni o'qitishlari uchun mo'ljallangan
-							bo'lim.
-						</p>
-					</div>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>

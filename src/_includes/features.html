@@ -1,0 +1,55 @@
+<div class="features pt-16 pb-12 xl:pt-36 xl:pb-24">
+	<div class="features__inner xl:max-w-[1100px] mx-auto px-3 lg:px-0">
+		<div class="text-center">
+			<div
+				class="features__caption text-primary-lighter mb-4 text-lg font-medium uppercase"
+			>
+				Our features
+			</div>
+			<div class="features__title section-title">Tailor-made features</div>
+			<div class="features__descr mx-auto text-sm xl:text-lg font-meduim mb-10">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+				lorem scelerisque elit sed ut pellentesque. Auctor vivamus id eu vel
+				ante fermentum.
+			</div>
+		</div>
+		<div class="features__list">
+			{% for feature in features %}
+			<div class="features__item">
+				<div class="feature h-full grid">
+					<div class="features__image flex">
+						<picture>
+							<img
+								class=""
+								src="assets/pics/{{feature.pic}}.png"
+								srcset="
+									assets/pics/{{feature.pic}}-2x.png 2x,
+									assets/pics/{{feature.pic}}.png    1x
+								"
+								alt="Kennekt cases page interface"
+							/>
+						</picture>
+					</div>
+					<div class="feature__content flex flex-col grow justify-start">
+						<div class="feature__content-inner">
+							<div
+								class="feature__title text-xl xl:text-2xl text-primary-lighter font-bold mb-3.5"
+							>
+								{{feature.title}}
+							</div>
+							<div class="feature__descr text-base">
+								{{feature.description}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<button
+			class="feature__toggle-btn btn table btn-outlined mx-auto btn-normal btn-outlined-dark rounded-xl mt-24 px-12"
+		>
+			See all features
+		</button>
+	</div>
+</div>
