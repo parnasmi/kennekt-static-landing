@@ -37,7 +37,7 @@ module.exports = [
 		icon: "icon-case-to-pdf",
 	},
 	{
-		title: "Business Reports and analytics",
+		title: "Business reports and analytics",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, tincidunt ac pharetra quis cum id." +
 			" Congue sed gravida non lobortis diam molestie sed. Amet porttitor pellentesque ut gravida. " +
