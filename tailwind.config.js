@@ -18,6 +18,8 @@ module.exports = {
 					light: "#E2E4E8",
 					"light-2": "#a6a6a6",
 					dark: "#7C8087",
+					ddd: "#DDDDDD",
+					f5f5f5: "#f5f5f5",
 				},
 				brown: {
 					light: "#F8E1D1",
