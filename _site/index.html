@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 
 	<!-- https://github.com/joshbuchea/HEAD -->
@@ -95,7 +95,7 @@
 				
 					<li class="mb-2 xl:m-0"><a class="page-header__link" href="/pages/about">About</a></li>
 				
-					<li class="mb-2 xl:m-0"><a class="page-header__link" href="/pages/contact">Contact</a></li>
+					<li class="mb-2 xl:m-0"><a class="page-header__link" href="/#contact-us">Contact</a></li>
 				
 			</ul>
 		</div>
@@ -659,39 +659,49 @@
 
 <!--   Work anywhere, with any device End-->
 <!--   Work anywhere, with any device Begin-->
-<div class="contact-us bg-primary-lighter/10">
+<div class="contact-us bg-primary-lighter/10" id="contact-us">
 	<div class="contact-us__inner xl:max-w-[1100px] mx-auto px-3 pt-10 pb-10 xl:px-0 xl:pt-24 xl:pb-36">
 		<div class="contact-us__header mb-8 xl:mb-12">
 
 			<div class="section-title text-center ">
 				Contact Us
 			</div>
-			<p class="text-center text-base xl:text-xl font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi,
+			<p class="text-center text-base xl:text-xl font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing
+				elit. Mi,
 				tincidunt ac pharetra quis cum id.</p>
 		</div>
 		<div class="contact-us__form-wrapper max-w-[804px] grid mx-auto content-center">
-			<div class="contact-us__form mb-8 xl:mb-0 bg-white border border-grey-ddd rounded-2xl drop-shadow-xl py-10 px-6">
+			<div
+				class="contact-us__form mb-8 xl:mb-0 bg-white border border-grey-ddd rounded-2xl drop-shadow-xl py-10 px-6">
 				<h4 class="font-bold text-xl mb-8 text-center">Contact Us</h4>
-				<form action="">
+				<form action="https://formsubmit.co/appsnews.uz@gmail.com" method="post">
+					<input type="hidden" name="_next" value="https://musing-sammet-3a1246.netlify.app/pages/thank-you">
+					<input type="hidden" name="_subject" value="New contact submission from Kennekt landing page!">
 					
 						<div class="relative mb-9 ">
-							<input name="name" type="text" id="kennekt-name" class="peer contact-input"
+							<input required name="name" type="text" id="kennekt-name"
+								   class="peer contact-input "
 								   placeholder="Your name">
+							
 							<label for="kennekt-name"
 								   class="contact-input-label peer-placeholder-shown:text-sm peer-placeholder-shown:text-kdark peer-placeholder-shown:top-3.5
 		peer-focus:-top-6">
 								Your name
 							</label>
+
 						</div>
 					
 						<div class="relative mb-9 ">
-							<input name="email" type="text" id="kennekt-email" class="peer contact-input"
+							<input required name="email" type="email" id="kennekt-email"
+								   class="peer contact-input "
 								   placeholder="Your email">
+							
 							<label for="kennekt-email"
 								   class="contact-input-label peer-placeholder-shown:text-sm peer-placeholder-shown:text-kdark peer-placeholder-shown:top-3.5
 		peer-focus:-top-6">
 								Your email
 							</label>
+
 						</div>
 					
 					<div class="relative mb-9 ">
@@ -743,21 +753,24 @@ consectetur adipiscing elit.
 				<div class="contact-us__links flex items-center justify-center">
 					
 						<a class="contact-type flex  items-center mr-8 text-primary
-						 last:mr-0 hover:text-primary-lighter transition" href="#" title="twitter">
+						 last:mr-0 hover:text-primary-lighter transition" href="#"
+						   title="twitter">
 							<svg width="35" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M34.145 3.826a13.688 13.688 0 0 1-3.93 1.057 6.809 6.809 0 0 0 3.001-3.762 13.475 13.475 0 0 1-4.33 1.649A6.808 6.808 0 0 0 23.898.612a6.823 6.823 0 0 0-6.824 6.829c0 .528.064 1.056.168 1.565A19.396 19.396 0 0 1 3.169 1.86a6.777 6.777 0 0 0-.929 3.446 6.83 6.83 0 0 0 3.042 5.688 6.886 6.886 0 0 1-3.086-.868v.083a6.827 6.827 0 0 0 5.472 6.7c-.587.153-1.191.231-1.797.233-.445 0-.865-.044-1.29-.104a6.838 6.838 0 0 0 6.38 4.735 13.68 13.68 0 0 1-8.473 2.918c-.572 0-1.1-.02-1.649-.084a19.327 19.327 0 0 0 10.483 3.062c12.552 0 19.42-10.399 19.42-19.425 0-.296 0-.592-.02-.888a14.7 14.7 0 0 0 3.423-3.53Z" fill="currentColor"/>
 </svg>
 						</a>
 					
 						<a class="contact-type flex  items-center mr-8 text-primary
-						 last:mr-0 hover:text-primary-lighter transition" href="#" title="facebook">
+						 last:mr-0 hover:text-primary-lighter transition" href="#"
+						   title="facebook">
 							<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.2103 0.129883H1.75117C1.04271 0.129883 0.470337 0.702254 0.470337 1.41071V30.8698C0.470337 31.5783 1.04271 32.1507 1.75117 32.1507H31.2103C31.9187 32.1507 32.4911 31.5783 32.4911 30.8698V1.41071C32.4911 0.702254 31.9187 0.129883 31.2103 0.129883ZM27.5119 9.47595H24.9542C22.9489 9.47595 22.5607 10.4286 22.5607 11.8295V14.9155H27.3478L26.7234 19.7466H22.5607V32.1507H17.5694V19.7506H13.3947V14.9155H17.5694V11.3532C17.5694 7.21848 20.0951 4.96502 23.7855 4.96502C25.5546 4.96502 27.0716 5.09711 27.5159 5.15715V9.47595H27.5119Z" fill="currentColor"/>
 </svg>
 						</a>
 					
 						<a class="contact-type flex  items-center mr-8 text-primary
-						 last:mr-0 hover:text-primary-lighter transition" href="#" title="linkedin">
+						 last:mr-0 hover:text-primary-lighter transition" href="#"
+						   title="linkedin">
 							<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M31.1981 0.129883H1.73896C1.0305 0.129883 0.45813 0.702254 0.45813 1.41071V30.8698C0.45813 31.5783 1.0305 32.1507 1.73896 32.1507H31.1981C31.9065 32.1507 32.4789 31.5783 32.4789 30.8698V1.41071C32.4789 0.702254 31.9065 0.129883 31.1981 0.129883ZM9.95629 27.4156H5.20521V12.1337H9.95629V27.4156ZM7.58275 10.0443C7.03811 10.0443 6.50569 9.88281 6.05283 9.58022C5.59997 9.27763 5.24701 8.84755 5.03859 8.34436C4.83016 7.84117 4.77562 7.28747 4.88188 6.75329C4.98813 6.21911 5.25041 5.72843 5.63553 5.34331C6.02066 4.95818 6.51133 4.69591 7.04552 4.58966C7.5797 4.4834 8.13339 4.53793 8.63658 4.74636C9.13977 4.95479 9.56985 5.30775 9.87244 5.76061C10.175 6.21347 10.3365 6.74588 10.3365 7.29053C10.3325 8.81152 9.09974 10.0443 7.58275 10.0443ZM27.7438 27.4156H22.9968V19.9828C22.9968 18.2096 22.9647 15.9321 20.5272 15.9321C18.0576 15.9321 17.6773 17.8614 17.6773 19.8547V27.4156H12.9342V12.1337H17.4892V14.223H17.5532C18.1856 13.0222 19.7346 11.7534 22.0481 11.7534C26.8593 11.7534 27.7438 14.9195 27.7438 19.0341V27.4156Z" fill="currentColor"/>
 </svg>

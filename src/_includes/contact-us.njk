@@ -1,26 +1,35 @@
-<div class="contact-us bg-primary-lighter/10">
+<div class="contact-us bg-primary-lighter/10" id="contact-us">
 	<div class="contact-us__inner xl:max-w-[1100px] mx-auto px-3 pt-10 pb-10 xl:px-0 xl:pt-24 xl:pb-36">
 		<div class="contact-us__header mb-8 xl:mb-12">
 
 			<div class="section-title text-center ">
 				Contact Us
 			</div>
-			<p class="text-center text-base xl:text-xl font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi,
+			<p class="text-center text-base xl:text-xl font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing
+				elit. Mi,
 				tincidunt ac pharetra quis cum id.</p>
 		</div>
 		<div class="contact-us__form-wrapper max-w-[804px] grid mx-auto content-center">
-			<div class="contact-us__form mb-8 xl:mb-0 bg-white border border-grey-ddd rounded-2xl drop-shadow-xl py-10 px-6">
+			<div
+				class="contact-us__form mb-8 xl:mb-0 bg-white border border-grey-ddd rounded-2xl drop-shadow-xl py-10 px-6">
 				<h4 class="font-bold text-xl mb-8 text-center">Contact Us</h4>
-				<form action="">
+				<form action="https://formsubmit.co/appsnews.uz@gmail.com" method="post">
+					<input type="hidden" name="_next" value="https://musing-sammet-3a1246.netlify.app/pages/thank-you">
+					<input type="hidden" name="_subject" value="New contact submission from Kennekt landing page!">
 					{% for field in contactFields %}
 						<div class="relative mb-9 ">
-							<input name="{{ field.name }}" type="text" id="{{ field.id }}" class="peer contact-input"
+							<input required name="{{ field.name }}" type="{{ field.type }}" id="{{ field.id }}"
+								   class="peer contact-input {{ field.classes }}"
 								   placeholder="{{ field.placeholder }}">
+							{% if field.type == 'email2' %}
+								<p>Email error</p>
+							{% endif %}
 							<label for="{{ field.id }}"
 								   class="contact-input-label peer-placeholder-shown:text-sm peer-placeholder-shown:text-kdark peer-placeholder-shown:top-3.5
 		peer-focus:-top-6">
 								{{ field.placeholder }}
 							</label>
+
 						</div>
 					{% endfor %}
 					<div class="relative mb-9 ">
@@ -53,7 +62,8 @@
 				<div class="contact-us__links flex items-center justify-center">
 					{% for link in  contactLinks %}
 						<a class="contact-type flex  items-center mr-8 text-primary
-						 last:mr-0 hover:text-primary-lighter transition" href="{{ link.link }}" title="{{ link.title }}">
+						 last:mr-0 hover:text-primary-lighter transition" href="{{ link.link }}"
+						   title="{{ link.title }}">
 							{{ link.svg }}
 						</a>
 					{% endfor %}

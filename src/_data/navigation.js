@@ -9,6 +9,6 @@ module.exports = [
 	},
 	{
 		title: "Contact",
-		link: "/pages/contact",
+		link: "/#contact-us",
 	},
 ];
