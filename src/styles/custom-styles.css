@@ -224,6 +224,11 @@ body {
 
 	.contact-us__form-wrapper {
 		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.contact-us__form {
+		max-width: 375px;
 	}
 
 	.upcoming__features-wrapper {
