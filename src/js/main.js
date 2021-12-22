@@ -23,7 +23,7 @@
 		}
 	});
 
-	toggleFeaturesBtn.addEventListener("click", function (e) {
+	toggleFeaturesBtn?.addEventListener("click", function (e) {
 		featuresList.classList.toggle("reveal");
 
 		if (featuresList.classList.contains("reveal")) {

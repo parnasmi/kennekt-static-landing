@@ -1,6 +1,7 @@
 module.exports = {
-	purge: ["./src/_includes/**/*.njk", "./src/**/*.html"],
+	purge: ["./src/**/*.njk", "./src/**/*.html"],
 	darkMode: false, // or 'media' or 'class'
+	mode: "jit",
 	theme: {
 		extend: {
 			colors: {
@@ -27,6 +28,9 @@ module.exports = {
 			},
 			fontFamily: {
 				inter: "Inter, sans-serif",
+			},
+			backgroundImage: {
+				"bg-about": "url('assets/img/bg-about.png')",
 			},
 		},
 	},

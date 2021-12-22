@@ -1,8 +1,16 @@
 ---
 layout: 'layouts/base.njk'
-title: 'Download page'
+title: 'About Kennekt Business CRM System'
 ---
-<div class="xl:max-w-[1100px] mx-auto">
-
-	<h1>About page</h1>
+<div class="w-full">
+	<div class="page-intro h-auto xl:h-[359px] bg-bg-about bg-no-repeat bg-right-top text-center py-8 xl:pt-20 bg-cover">
+		<h1 class="font-extrabold font text-2xl xl:text-4xl mb-4 xl:mb-7">About us</h1>
+		<div class="page-breadcrumb flex items-center justify-center">
+			<a class="page-breadcrumb__item font-semibold font-sm text-primary underline decoration-primary hover:no-underline" href="/">Home</a> &nbsp;&nbsp; - &nbsp;&nbsp;
+			<div class="page-breadcrumb__item  font-sm">About us</div>
+		</div>
+	</div>
+	<div class="page-section mx-auto max-w-[1146px] py-16 px-3 xl:px-0">
+		{% include "_about-us.njk" %}
+	</div>
 </div>
